@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:carproject="http://www.netbeans.org/ns/car-project/1" xmlns:xalan="http://xml.apache.org/xslt" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-PatientRegistrationWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PatientRegistrationWebService"/>
+        <property name="wsdl-PatientRegistrationWebService" location="${meta.inf}/xml-resources/web-service-references/PatientRegistrationWebService/wsdl/localhost_8080/PatientRegistrationWebService/PatientRegistrationWebService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PatientRegistrationWebService" destdir="${build.generated.dir}/jax-wsCache/PatientRegistrationWebService" wsdl="${wsdl-PatientRegistrationWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PatientRegistrationWebService/PatientRegistrationWebService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-PatientRegistrationWebService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PatientRegistrationWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PatientRegistrationWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PatientRegistrationWebService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PatientRegistrationWebService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ejb/session/ws"/>
+    </target>
+    <target name="wsimport-client-PatientAppointmentWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/PatientAppointmentWebService"/>
+        <property name="wsdl-PatientAppointmentWebService" location="${meta.inf}/xml-resources/web-service-references/PatientAppointmentWebService/wsdl/localhost_8080/PatientAppointmentWebService/PatientAppointmentWebService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/PatientAppointmentWebService" destdir="${build.generated.dir}/jax-wsCache/PatientAppointmentWebService" wsdl="${wsdl-PatientAppointmentWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/PatientAppointmentWebService/PatientAppointmentWebService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-PatientAppointmentWebService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/PatientAppointmentWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/PatientAppointmentWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-PatientAppointmentWebService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/PatientAppointmentWebService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ejb/session/ws"/>
+    </target>
+    <target name="wsimport-client-DoctorWebService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DoctorWebService"/>
+        <property name="wsdl-DoctorWebService" location="${meta.inf}/xml-resources/web-service-references/DoctorWebService/wsdl/localhost_8080/DoctorWebService/DoctorWebService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DoctorWebService" destdir="${build.generated.dir}/jax-wsCache/DoctorWebService" wsdl="${wsdl-DoctorWebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/DoctorWebService/DoctorWebService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-DoctorWebService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DoctorWebService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DoctorWebService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DoctorWebService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DoctorWebService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/ejb/session/ws"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-PatientRegistrationWebService, wsimport-client-PatientAppointmentWebService, wsimport-client-DoctorWebService"/>
+</project>

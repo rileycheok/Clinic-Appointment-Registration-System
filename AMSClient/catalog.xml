@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/PatientRegistrationWebService/PatientRegistrationWebService?wsdl" uri="src/conf/xml-resources/web-service-references/PatientRegistrationWebService/wsdl/localhost_8080/PatientRegistrationWebService/PatientRegistrationWebService.wsdl"/>
+    <system systemId="http://localhost:8080/PatientRegistrationWebService/PatientRegistrationWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/PatientRegistrationWebService/wsdl/localhost_8080/PatientRegistrationWebService/PatientRegistrationWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PatientAppointmentWebService/PatientAppointmentWebService?wsdl" uri="src/conf/xml-resources/web-service-references/PatientAppointmentWebService/wsdl/localhost_8080/PatientAppointmentWebService/PatientAppointmentWebService.wsdl"/>
+    <system systemId="http://localhost:8080/PatientAppointmentWebService/PatientAppointmentWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/PatientAppointmentWebService/wsdl/localhost_8080/PatientAppointmentWebService/PatientAppointmentWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DoctorWebService/DoctorWebService?wsdl" uri="src/conf/xml-resources/web-service-references/DoctorWebService/wsdl/localhost_8080/DoctorWebService/DoctorWebService.wsdl"/>
+    <system systemId="http://localhost:8080/DoctorWebService/DoctorWebService?xsd=1" uri="src/conf/xml-resources/web-service-references/DoctorWebService/wsdl/localhost_8080/DoctorWebService/DoctorWebService.xsd_1.xsd"/>
+</catalog>
