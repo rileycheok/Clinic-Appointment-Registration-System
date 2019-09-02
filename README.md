@@ -1,4 +1,5 @@
-# is2103Assignment2
+# Clinic Appointment Registration System
+
 1. Introduction
 The Clinic Appointment Registration System (“CARS”) allows a GP clinic to operate a frontline appointment and registration services. There will be three interfaces consisting of Clinic Admin Terminal, Self-Service Kiosk Terminal and AMSClient(Web Services) for external vendors. 
 2. Entity Classes
